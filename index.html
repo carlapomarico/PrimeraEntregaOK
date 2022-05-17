@@ -5,129 +5,218 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cookie" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+
     <title>Carla Pomarico</title>
 </head>
 
 <body>
-    <!-- Header Start -->
-    <header class="site-header">
-        <div class="wrapper site-header__wrapper">
-            <a href="index.html" class="Home">Home</a>
-            <nav class="nav">
-                <button class="nav__toggle" aria-expanded="false" type="button">
-                </button>
-                <ul class="nav__wrapper">
-                    <li class="nav__item"><a href="/experience.html">Experience</a></li>
-                    <li class="nav__item"><a href="/education.html">Education</a></li>
-                    <li class="nav__item"><a href="index.html#about">About</a></li>
-                    <li class="nav__item"><a href="index.html#contact">Contact</a></li>
+    <!--Main Start-->
+    <main>
+        <!-- Header Start -->
+        <header class="nav-menu">
+            <label for="nav-toggle" class="nav-toggle-label"></label>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <!-- Menu Start -->
+            <ul id="menu" class="v-effect-link">
+                <li class="nav-item"><a href="index.html#welcome">Home</a></li>
+                <li class="nav-item"><a href="index.html#about">About</a></li>
+                <li class="nav-item"><a href="index.html#experience">Experience</a></li>
+                <li class="nav-item"><a href="index.html#education">Education</a></li>
+                <li class="nav-item"><a href="index.html#contactForm">Contact</a></li>
+            </ul>
+        </header>
+        <!-- Menu End -->
+        <!-- Header End -->
+        <!--Welcome Section Start-->
+        <section>
+            <h1 id="welcome">Welcome</h1>
+            <div class="welcome-text">
+                <p>This site was buit as a project for Codo a CodoFullstack Python Web Development Course, in Buenos
+                    Aires, March to July 2022.</p>
+                <p><strong>What must be submitted?</strong></p>
+                <p>The OPT must meet the following requirements:</p>
+                <ul>
+                    <li> Having at least 3 html pages, being its subject matter free. In case it is a One Page style
+                        Website, it must have at least 3 sections.</li>
+                    <li> Using semantic tags to structure the site.</li>
+                    <li> Containing a contact form with validation through Javascript.</li>
+                    <li> Using at least one Iframe, FontAwesome icons, and local fonts or Google Fonts.</li>
+                    <li> Having at least one fully responsive page with 3 breakpoints for 3 different device sizes.</li>
+                    <li> Using at least one animation, transformation or transition (indicate where the animation was
+                        incorporated).</li>
+                    <li> Having an HTML structure laid out with Flexbox and/or Grid.</li>
+                    <li> If you want to use Bootstrap (not required), you may only do so on the form page of the
+                        website.</li>
+                    <li> The page must be uploaded to an on-line server to be browsed by the Teacher. Example: GitHub
+                        Pages, Netlify, 000webhost or similar.</li>
+                    <li> In addition to the technical aspects already mentioned, the project should include design
+                        aspects which will be evaluated by the teacher. For that purpose, it is recommended that you
+                        view the material available in the Virtual Classroom. <a href="https://youtu.be/fVkGt2tYIj0">Web
+                            Design Seminar</a>. For more information, see material included in the Virtual
+                        Classroom Methodologies and tools I/Design.</li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- Header End -->
-    <!--Welcome Start-->
-    <h1>Welcome</h1>
-    <div class="container">
-        <div class="main-text-container">
-            <div class="col-12">
-                <div class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis nisi
-                    lacus,
-                    nec
-                    posuere lacus interdum eget. Ut et ullamcorper metus. Praesent molestie enim volutpat accumsan
-                    porta.
-                    Vivamus
-                    sit amet posuere mauris. Suspendisse quis dui ut neque maximus efficitur. In elementum mi ac
-                    imperdiet
-                    ultricies. Mauris pharetra justo in faucibus mattis. Donec pretium urna quis rhoncus vestibulum.
-                    Integer
-                    venenatis, ex nec pretium tristique, mi est dictum erat, at tempus sapien enim quis diam. Nullam
-                    viverra
-                    ex
-                    libero, non suscipit enim vulputate a. Vestibulum ac erat eget leo feugiat pretium. Nam maximus
-                    dolor
-                    nulla,
-                    eget consequat nisi tincidunt sed. Curabitur quis enim non turpis porttitor iaculis.
+                <p><strong>Note:</strong> the OPT is individual but in case you want to solve the project as a group,
+                    you must
+                    synchronize the code of the OPT in Github (or similar) sending the link of the repository to the
+                    teacher. This mandatory requirement only applies to projects developed by 2 people (maximum number
+                    of members possible). For more information about Git, see material included in the Virtual Classroom
+                    Methodologies and tools I/Git.</p>
+                <p><strong>Passing conditions: to pass, the practical work must be solved in a 60% correct way.</strong>
+                </p>
+            </div>
+        </section>
+        <!--Welcome Section End-->
+        <!--About Section Start-->
+        <section>
+            <h1 id="about">About Me</h1>
+            <div id="circle-shape">
+                <img src="img/profilepic.jpeg">
+                <p>I am a very restless and curious person. I love challenges and I am by nature self-taught and
+                    autonomous.</p>
+                <p>However, I have an excellent management of interpersonal relationships. I love
+                    working as a team and I like to share my knowledge with the groups in which I am.</p>
+                <p>Also, I am
+                    always interested in learning more to develop and grow both personally and professionally.</p>
+                <p>After
+                    having started as a freelance QA and worked in several projects, today I have almost 10 years of
+                    IT experience.</p>
+            </div>
+        </section>
+        <!--About Section End-->
+        <!--Experience Section Start-->
+        <section>
+            <h1 id="experience">Experience</h1>
+            <div class="container">
+                <div class="grid-row">
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="https://www.morean.co/"></a>
+                        <div class="grid-item-wrapper">
+                            <img src="img/logomorean.png"></img>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="https://yappaapp.com/" target="_blank"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/yappaLogoRed.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="https://www.olxgroup.com/" target="_blank"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/brand_olx-group.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="https://yoizen.com/" target="_blank"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/logo-yoizen.png"></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Welcome End-->
-    <!--About Start-->
-    <h1 id="about">About Me</h1>
-    <div class="container">
-        <div class="about-row1">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src=img/profilepic.jpeg class="img-fluid" alt="Responsive image">
+        </section>
+        <!--Experience Section End-->
+        <!--Education Section Start-->
+        <section>
+            <h1 id="education">Education</h1>
+            <div class="container">
+                <div class="grid-row">
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="#"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/logoistlyr.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="#" target="_blank"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/alicialogo.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <a class="wrapping-link" href="#" target="_blank"></a>
+                        <div class="grid-item-wrapper">
+                            <div class="grid-item-container">
+                                <img src="img/ubalogo.png"></img>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <p>Aliquam tempus neque eget tempus consectetur. Integer ligula nunc, sagittis non malesuada quis,
-                        consequat
-                        eu ipsum. In hac habitasse platea dictumst.
-                    </p>
-                </div>
             </div>
-        </div>
-    </div>
-    <!--About End-->
-    <!--Contact Start-->
-    <h1 id="contact">Contact</h1>
-    <div class="form-container">
-        <div id="error_message"></div>
-        <form action="" id="myform" onsubmit=" return validate();">
-            <div class="input_field">
-                <input type="text" placeholder="Nombre" id="name">
+        </section>
+        <!--Education Section End-->
+        <!--Contact Section Start-->
+        <section>
+            <h1 id="contactForm">Contact</h1>
+            <div class="form-container">
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="3" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit"
+                                data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </fieldset>
+                </form>
             </div>
-            <div class="input_field">
-                <input type="text" placeholder="Asunto" id="subject">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Telefono" id="phone">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="input_field">
-                <textarea placeholder="Mensaje" id="message"></textarea>
-            </div>
-            <div class="btn pull-right">
-                <input type="submit">
-            </div>
-        </form>
-    </div>
-    <!--Contact End-->
+        </section>
+        <!--Contact Section End-->
+    </main>
+    <!--Main End-->
     <!--Footer Start-->
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3><span>Carla Pomarico</span></h3>
-            <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/carla-pomarico/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/carlapomarico/"><i class="fa fa-github"></i></a>
-                <a href="https://www.instagram.com/lasudakita"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.facebook.com/charly.pomarico"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/LaSudakita"><i class="fa fa-twitter"></i></a>
+    <footer id="lab_social_icon_footer">
+        <ul class="v-effect-link">
+            <li><a href="https://www.linkedin.com/in/carla-pomarico"><i id="social-ln" class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a href="https://github.com/carlapomarico/"><i id="social-gh" class="fa fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/lasudakita"><i id="social-ig" class="fa fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/charly.pomarico"><i id="social-fb" class="fa fa-facebook"></i></a>
+            </li>
+            <li><a href="https://twitter.com/lasudakita"><i id="social-tw" class="fa fa-twitter"></i></a></li>
+        </ul>
+        <div class="center">
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">ES</span>
             </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the website</span>
-                This page was designed and developed as part of the FullStack Python course of the Codo a Codo
-                program sponsored by the Autonomous City of Buenos Aires.
-            </p>
-            <p class="footer-company-name">Carla Pomarico &copy; 2022</p>
-        </div>
+            </center>
+            <div>
+                <p class="footer-copy">Carla Pomarico &copy; 2022</p>
+            </div>
     </footer>
     <!-- Footer End -->
-    <script src="C:\Users\Charly\CodoACodo\FirstWebSite-CarlaP\js\index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
